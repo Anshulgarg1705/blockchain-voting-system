@@ -1,0 +1,256 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #1e293b
+    );
+    min-height:100vh;
+    color:white;
+    padding:30px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    max-width:950px;
+    margin:auto;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1{
+    text-align:center;
+    color:#38bdf8;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+h2{
+    color:#f8fafc;
+    margin-bottom:15px;
+}
+
+p{
+    color:#cbd5e1;
+}
+
+/* =========================
+   WALLET SECTION
+========================= */
+
+#walletSection{
+    text-align:center;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.03);
+}
+
+#walletAddress{
+    margin-top:15px;
+    color:#22c55e;
+    font-weight:700;
+    word-break:break-word;
+}
+
+/* =========================
+   PANELS
+========================= */
+
+#adminSection,
+#voteSection,
+#winnerSection{
+    margin-top:25px;
+    padding:25px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input{
+    width:100%;
+    padding:14px;
+    margin-top:12px;
+    margin-bottom:12px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#1e293b;
+    color:white;
+    font-size:15px;
+    transition:0.3s;
+}
+
+input:focus{
+    border:1px solid #38bdf8;
+    box-shadow:0 0 15px rgba(56,189,248,0.4);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:8px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    color:white;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(37,99,235,0.5);
+}
+
+button:active{
+    transform:scale(0.98);
+}
+
+/* =========================
+   CANDIDATE LIST
+========================= */
+
+#candidatesList{
+    margin-top:15px;
+}
+
+/* =========================
+   CANDIDATE CARD
+========================= */
+
+.candidateCard{
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:16px;
+    padding:18px;
+    margin-bottom:15px;
+    transition:all 0.3s ease;
+}
+
+.candidateCard:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+}
+
+.candidateCard strong{
+    color:#38bdf8;
+}
+
+/* =========================
+   STATUS BOX
+========================= */
+
+#status{
+    margin-top:25px;
+    padding:15px;
+    border-radius:12px;
+    background:#111827;
+    color:#f8fafc;
+    text-align:center;
+    font-weight:600;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+/* =========================
+   WINNER RESULT
+========================= */
+
+#winnerResult{
+    margin-top:15px;
+    padding:15px;
+    border-radius:12px;
+    background:rgba(34,197,94,0.15);
+    color:#22c55e;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        padding:20px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    button{
+        font-size:14px;
+    }
+
+    input{
+        font-size:14px;
+    }
+}

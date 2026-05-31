@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Application</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Web3.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Voting Application</h1>
+
+        <!-- Wallet -->
+        <div id="walletSection">
+            <button id="connectWallet">Login with Wallet</button>
+            <p id="walletAddress">Not connected</p>
+        </div>
+
+        <!-- Admin Panel -->
+        <div id="adminSection">
+            <h2>Admin Panel</h2>
+
+            <input type="text" id="candidateName" placeholder="Candidate Name">
+            <button id="addCandidateBtn">Add Candidate</button>
+
+            <!-- ✅ NEW: Delete Candidate -->
+            <input type="number" id="deleteCandidateId" placeholder="Candidate ID to delete">
+            <button id="deleteCandidateBtn">Delete Candidate</button>
+        </div>
+
+        <!-- Voting Section -->
+        <div id="voteSection">
+            <h2>Vote for Candidate</h2>
+
+            <div id="candidatesList">
+                <!-- Candidates will load here -->
+            </div>
+
+            <input type="number" id="voteCandidateId" placeholder="Candidate ID">
+            <button id="voteBtn">Vote</button>
+        </div>
+
+        <!-- ✅ NEW: Winner Section -->
+        <div id="winnerSection">
+            <h2>Winner</h2>
+            <button id="getWinnerBtn">Show Winner</button>
+            <p id="winnerResult"></p>
+        </div>
+
+        <!-- Status -->
+        <div id="status"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
